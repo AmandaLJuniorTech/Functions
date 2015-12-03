@@ -8,6 +8,9 @@ drawABlueSquare();
 if (mousePressed) {
     drawACircleAt(mouseX, mouseY, 40 , mouseY/2, mouseX/2);
   }
+  if (keyPressed){
+    sleep();
+  }
   /* drawARandomCircle();
   
   */
@@ -31,4 +34,7 @@ void drawABlueSquare(){
 void drawACircleAt(int x, int y, int r, int g, int b) {
   fill(r, g, b);
   ellipse(x, y, 30, 30);
+}
+void sleep(){
+  background(0);
 }
