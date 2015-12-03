@@ -4,18 +4,18 @@ void setup() {
 }
 
 void draw() {
-  drawARandomCircle();
+drawABlueSquare();
+  /* drawARandomCircle();
   if (mousePressed) {
     drawACircleAt(mouseX, mouseY);
-    {
-    }
   }
+  */
 }
-/**************
+/*
  dataType name(parameters){
  block of code
  }
- **********/
+
 void drawARandomCircle() {
   fill(random(255), 0, random(255)); //sets random fill with colors of red and blue
   float sz = random(5, 100);  //decl;are and initialize
@@ -24,4 +24,9 @@ void drawARandomCircle() {
 void drawACircleAt(int x, int y) {
   fill(65, 0, 40);
   ellipse(x, y, 30, 30);
+}
+*/
+void drawABlueSquare(){
+  fill(0,0,255);
+  rect(width/2, height/2, 50, 50);
 }
