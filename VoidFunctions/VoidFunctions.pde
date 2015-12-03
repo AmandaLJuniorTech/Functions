@@ -5,10 +5,11 @@ void setup() {
 
 void draw() {
 drawABlueSquare();
-  /* drawARandomCircle();
-  if (mousePressed) {
-    drawACircleAt(mouseX, mouseY);
+if (mousePressed) {
+    drawACircleAt(mouseX, mouseY, 40 , mouseY/2, mouseX/2);
   }
+  /* drawARandomCircle();
+  
   */
 }
 /*
@@ -21,12 +22,13 @@ void drawARandomCircle() {
   float sz = random(5, 100);  //decl;are and initialize
   ellipse(random(width), random(height), sz, sz); // make random ellipse
 }
-void drawACircleAt(int x, int y) {
-  fill(65, 0, 40);
-  ellipse(x, y, 30, 30);
-}
+
 */
 void drawABlueSquare(){
   fill(0,0,255);
   rect(width/2, height/2, 50, 50);
+}
+void drawACircleAt(int x, int y, int r, int g, int b) {
+  fill(r, g, b);
+  ellipse(x, y, 30, 30);
 }
